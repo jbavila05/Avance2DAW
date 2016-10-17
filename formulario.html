@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Juega</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="js/manejo.js"></script>
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<script src="http://code.jquery.com/jquery-1.12.2.min.js"></script>
+		<script src="js/jquery.faloading.js"></script>
+            <link rel="stylesheet" href="js/jquery.faloading.css">
+        
+		<style>
+			#particles-js{
+				width: 100%;
+				height: 100%;
+				position: fixed;
+			}
+		</style>
+			<script>
+				var loading_time = 1000;
+                        $(function() {
+
+				$("#btnBodyLoading").click(function() {
+					$("body").faLoading('fa-cog');
+
+					setTimeout(function() {
+						$("body").faLoading(false);
+					},loading_time);
+                                        
+				});
+		});
+</script>		
+</head>
+	<body >
+				<div id="particles-js"></div>
+		
+			<div id="page-wrapper">
+			<header id="header">
+						<h1><a href="index.html">Puzzle</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="index.html" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+					<div class="login" style="width: 1000px; margin-left:150px;">
+				<br><br>
+
+				<h4>Registrate!</h4><hr  style="width:50%;" />
+				<input type="text" placeholder="Nombre" name="nombre" onkeypress="return nombre(event)" id="name" required><br><br>
+				<input type="text" placeholder="Apellido" name="apell" onkeypress="return nombre(event)" id="lastname" required><br><br>
+				<input type="email" placeholder="Correo" name="correo" onkeypress="return nombre1(event)" id="email" required><br><br><span id="emailOK"></span>
+				<input type="text" placeholder="Username" name="user" id="username" required><br>
+				<input type="password" placeholder="Password" name="password" id="pass" required ><br>
+				<input  class="pedo" type="button"  value="Registrar" id="btnBodyLoading" onclick="regis();">
+				<br><br><p >Si ya estas registrado</p><a style="text-decoration:none;" href="login.html">Logeate aqui</a>
+				
+		</div>
+			
+					<footer id="footer" style="height:2px;">
+						<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; Universidad Don Bosco | DAW  2016 CopyRight</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="js/validaciones.js"></script>
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="../assets/js/main.js"></script>
+			<script src="js/particles.js"></script>
+			<script src="js/particulas.js"></script>
+	</body>
+</html>
